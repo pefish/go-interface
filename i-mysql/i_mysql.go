@@ -69,7 +69,7 @@ type IMysql interface {
 		err error,
 	)
 
-	Begin() (*IMysql, error)
+	Begin() (IMysql, error)
 	Commit() error
 	Rollback() error
 }
