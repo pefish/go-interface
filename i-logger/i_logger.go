@@ -1,9 +1,6 @@
 package i_logger
 
 type ILogger interface {
-	Close()
-	IsDev() bool
-	IsDebug() bool
 	FormatOutput(args ...interface{}) string
 	Sdump(args ...interface{}) string
 
