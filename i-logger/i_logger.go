@@ -1,8 +1,11 @@
 package i_logger
 
+import t_logger "github.com/pefish/go-interface/t-logger"
+
 type ILogger interface {
 	FormatOutput(args ...interface{}) string
 	Sdump(args ...interface{}) string
+	Level() t_logger.Level
 
 	Debug(args ...interface{})
 	DebugF(format string, args ...interface{})
