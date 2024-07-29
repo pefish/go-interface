@@ -1,6 +1,6 @@
 package i_logger
 
-type InterfaceLogger interface {
+type ILogger interface {
 	Close()
 	IsDev() bool
 	IsDebug() bool
