@@ -1,10 +1,18 @@
 package i_logger
 
-import "fmt"
+import (
+	"fmt"
+
+	t_logger "github.com/pefish/go-interface/t-logger"
+)
 
 var DefaultLogger = DefaultLoggerType{}
 
 type DefaultLoggerType struct{}
+
+func (d *DefaultLoggerType) Level() t_logger.Level {
+	return t_logger.Level_DEBUG
+}
 
 func (d *DefaultLoggerType) FormatOutput(args ...interface{}) string {
 	if len(args) == 0 {
