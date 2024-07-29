@@ -1,13 +1,11 @@
 package i_mysql
 
 import (
-	i_logger "github.com/pefish/go-interface/i-logger"
 	t_mysql "github.com/pefish/go-interface/t-mysql"
 )
 
 type IMysql interface {
 	TagName() string
-	SetLogger(logger i_logger.InterfaceLogger)
 	Close()
 
 	ConnectWithConfiguration(configuration t_mysql.Configuration) error
