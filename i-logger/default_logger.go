@@ -10,6 +10,18 @@ var DefaultLogger = DefaultLoggerType{}
 
 type DefaultLoggerType struct{}
 
+func (d *DefaultLoggerType) CloneWithPrefix(prefix string) ILogger {
+	return d
+}
+
+func (d *DefaultLoggerType) CloneWithLevel(level t_logger.Level) ILogger {
+	return d
+}
+
+func (d *DefaultLoggerType) CloneWithOutputFile(filepath string) ILogger {
+	return d
+}
+
 func (d *DefaultLoggerType) Level() t_logger.Level {
 	return t_logger.Level_DEBUG
 }
