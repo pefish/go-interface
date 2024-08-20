@@ -6,6 +6,9 @@ type ILogger interface {
 	FormatOutput(args ...interface{}) string
 	Sdump(args ...interface{}) string
 	Level() t_logger.Level
+	CloneWithPrefix(prefix string) *ILogger
+	CloneWithLevel(level t_logger.Level) *ILogger
+	CloneWithOutputFile(filepath string) *ILogger
 
 	Debug(args ...interface{})
 	DebugF(format string, args ...interface{})
