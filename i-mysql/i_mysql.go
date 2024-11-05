@@ -59,6 +59,10 @@ type IMysql interface {
 		lastInsertId uint64,
 		err error,
 	)
+	InsertIgnore(tableName string, params interface{}) (
+		lastInsertId uint64,
+		err error,
+	)
 	Update(
 		updateParams *t_mysql.UpdateParams,
 		values ...interface{},
