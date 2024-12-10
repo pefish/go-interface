@@ -44,6 +44,7 @@ type IApiSession interface {
 	UrlParams() map[string]string
 	FormValues() (map[string][]string, error)
 	ReadJSON(jsonObject interface{}) error
+	ReadMap() (map[string]interface{}, error)
 	Api() IApi
 	SetApi(api IApi)
 	ResponseWriter() http.ResponseWriter
