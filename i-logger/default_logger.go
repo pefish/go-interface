@@ -47,11 +47,11 @@ func (d *DefaultLoggerType) Debug(args ...interface{}) {
 }
 
 func (d *DefaultLoggerType) DebugF(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) DebugFRaw(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) Info(args ...interface{}) {
@@ -59,11 +59,11 @@ func (d *DefaultLoggerType) Info(args ...interface{}) {
 }
 
 func (d *DefaultLoggerType) InfoF(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) InfoFRaw(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) InfoDump(args ...interface{}) {
@@ -75,11 +75,11 @@ func (d *DefaultLoggerType) Warn(args ...interface{}) {
 }
 
 func (d *DefaultLoggerType) WarnF(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) WarnFRaw(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) Error(args ...interface{}) {
@@ -87,9 +87,9 @@ func (d *DefaultLoggerType) Error(args ...interface{}) {
 }
 
 func (d *DefaultLoggerType) ErrorF(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
 
 func (d *DefaultLoggerType) ErrorFRaw(format string, args ...interface{}) {
-	fmt.Printf(format, args...)
+	fmt.Printf(format+"\n", args...)
 }
